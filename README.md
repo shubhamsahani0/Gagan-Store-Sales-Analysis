@@ -1,117 +1,213 @@
- 📊 Gagan Store Annual Sales Analysis (2025)
 
-🛠️ Step 1: Data Cleaning & Preparation (Most Important Step)
+#  Gagan Store Annual Sales Analysis (2025)
+<img width="1813" height="712" alt="Dashboard" src="https://github.com/user-attachments/assets/50c89bbf-801d-43b2-94e9-c47ac09db728" />
 
-Raw data is usually messy, so first I cleaned it.
 
-✔️ 1. Removed Duplicates
-Sometimes same order appears multiple times.
-I removed duplicate entries to avoid wrong analysis.
+##  Project Overview
 
-✔️ 2. Standardized Data
-Gender column had values like M, Male, W, Female
-I converted all into:
-Men
-Women
-👉 This ensures consistency in analysis.
+This project focuses on analyzing the annual sales data of **Gagan Store (2025)** using Microsoft Excel. The aim is to transform raw data into meaningful insights and build an interactive dashboard for better business decision-making.
 
-✔️ 3. Data Formatting
-Fixed date format
-Converted sales into proper INR currency
-Checked numeric columns (no text errors)
+The project demonstrates real-world data analysis steps including **data cleaning, data processing, visualization, and insight generation**.
 
-✔️ 4. Feature Engineering (New Column Creation)
-I created a new column Age Group using Excel formula:
-<30 → Teenager
-30–49 → Adult
-50+ → Senior
+---
 
-👉 This helps in customer segmentation analysis
+##  Objectives
 
-📊 Step 2: Data Processing using Pivot Tables
+* To analyze customer purchasing behavior
+* To identify top-performing states and sales channels
+* To understand sales trends across different months
+* To find the target customer segment
+* To build an interactive dashboard for decision-making
 
-After cleaning, I used Pivot Tables to analyze data.
+---
 
-✔️ Monthly Sales Analysis
-Found total sales per month
-Identified trends (increase/decrease)
+##  Dataset Description
 
-✔️ State-wise Sales
-Compared sales across states
-Found top-performing states
+The dataset contains sales records with the following fields:
 
-✔️ Channel Analysis
-Compared platforms like:
+* Order ID
+* Customer Name
+* Gender
+* Age
+* Date of Order
+* State
+* Sales Channel (Amazon, Flipkart, Myntra, etc.)
+* Category & Product Details
+* Order Quantity
+* Sales Amount (INR)
+* Order Status
 
-Amazon
-Flipkart
-Myntra
+---
 
-👉 Helps identify where most orders are coming from
+##  Data Cleaning & Preparation
 
-✔️ Customer Analysis
-Analyzed:
-Gender vs Sales
-Age Group vs Orders
+Before analysis, the dataset was cleaned to ensure accuracy and consistency:
 
-👉 Helps understand target audience
+### ✔️ Removed Duplicates
 
-📈 Step 3: Dashboard & Visualization
+Duplicate records were identified and removed to avoid incorrect analysis.
 
-I created an interactive dashboard in Excel.
+### ✔️ Standardized Data
 
-📊 Charts Used:
-Line Chart → Monthly sales trend
-Bar Chart → State & gender comparison
-Pie Chart → Order status distribution
-🎛️ Slicers (Filters Added):
-Month
-Channel
-Category
+* Gender values were inconsistent (M, Male, W, Female)
+* Converted all values into:
 
-👉 With slicers, user can filter entire dashboard in one click
+  * Men
+  * Women
 
-📌 Key Insights (Very Important for Interview)
-🏆 1. Top States
-Maharashtra
-Karnataka
-Uttar Pradesh
+### ✔️ Data Formatting
 
-👉 These states generate highest sales
+* Ensured correct **date format**
+* Converted sales values into **INR currency format**
+* Fixed numerical columns
 
-👩 2. Target Customers
-Women contribute around 64% of total sales
+### ✔️ Feature Engineering
 
-👉 Business should focus more on women customers
+Created a new column **Age Group** using Excel formulas:
 
-🛒 3. Best Sales Channels
-Amazon
-Flipkart
-Myntra
+* Teenager (<30)
+* Adult (30–49)
+* Senior (50+)
 
-👉 These platforms drive majority of orders
+This helped in better customer segmentation.
 
-📅 4. Peak Sales Month
-November has highest sales
+---
 
-👉 Possible reason:
+## Data Analysis (Using Pivot Tables)
 
-Festive season (Diwali, offers, discounts)
-🚀 Tools & Skills Used
-💻 Microsoft Excel
-Data Cleaning
-Pivot Tables
-Charts & Visualization
-Dashboard Design
-Formulas
-💡 Final Conclusion
+Pivot Tables were used to summarize and analyze the data efficiently:
 
-This project shows how:
+###  Monthly Sales Analysis
 
-Raw data → Clean data → Insights → Dashboard
-Helps businesses:
-Understand customers
-Improve marketing strategy
-Increase sales
+* Calculated total sales for each month
+* Identified trends and peak months
 
-👉 Overall, this is a complete Data Analytics project using Excel
+###  State-wise Analysis
+
+* Compared sales across different states
+* Identified top-performing regions
+
+###  Channel-wise Analysis
+
+* Compared performance of:
+
+  * Amazon
+  * Flipkart
+  * Myntra
+
+###  Customer Analysis
+
+* Compared sales based on Gender
+* Analyzed Age Group vs Sales
+
+---
+
+##  Dashboard & Visualization
+
+An interactive dashboard was created in Excel to present insights visually.
+
+###  Charts Used
+
+* **Line Chart** → Monthly sales trend
+* **Bar Chart** → State and gender comparison
+* **Pie Chart** → Order status distribution
+
+###  Slicers Added
+
+* Month
+* Sales Channel
+* Category
+
+Slicers allow users to filter the entire dashboard dynamically with a single click.
+
+---
+
+##  Key Insights
+
+###  Top Performing States
+
+* Maharashtra
+* Karnataka
+* Uttar Pradesh
+
+These states contribute the highest sales.
+
+---
+
+###  Target Customers
+
+* Women contribute approximately **64% of total sales**
+
+This indicates that women are the primary customer segment.
+
+---
+
+###  Best Sales Channels
+
+* Amazon
+* Flipkart
+* Myntra
+
+These platforms generate the majority of orders.
+
+---
+
+###  Peak Sales Period
+
+* November shows the highest sales
+
+This may be due to festive season demand and discounts.
+
+---
+
+##  Tools & Technologies Used
+
+* **Microsoft Excel**
+
+  * Data Cleaning
+  * Pivot Tables
+  * Advanced Formulas
+  * Data Visualization
+  * Dashboard Creation
+
+---
+
+##  Project Files
+
+* <a href ="https://github.com/shubhamsahani0/Gagan-Store-Sales-Analysis/blob/main/Gagan%20Store.xlsx">  → Dataset and analysis
+* `Dashboard.
+ <img width="1919" height="1026" alt="Dashboard" src="https://github.com/user-attachments/assets/3b334f3f-9db6-445a-8f4a-4763ee27bb72" />
+
+
+
+## ▶️ How to Use
+
+1. Download the Excel file
+2. Open it in Microsoft Excel
+3. Use slicers to interact with the dashboard
+4. Analyze trends and insights
+
+---
+
+##  Learning Outcomes
+
+From this project, I learned:
+
+* How to clean and prepare real-world data
+* How to use Pivot Tables for analysis
+* How to build interactive dashboards
+* How to generate business insights from data
+
+---
+
+##  Conclusion
+
+This project highlights how raw sales data can be converted into actionable insights using Excel. The dashboard helps in understanding customer behavior, identifying growth opportunities, and improving business strategies.
+
+---
+
+##  Acknowledgement
+
+This project was created as part of my Data Analytics learning journey to gain practical experience in Excel-based data analysis.
+
+---
