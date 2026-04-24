@@ -1,73 +1,152 @@
-<!-- Nav -->
-<nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-5xl z-50">
-    <div class="glass-nav rounded-3xl px-8 py-4 flex justify-between items-center shadow-sm">
-        <div class="text-xl font-black text-indigo-600 italic">SS.</div>
-        <div class="flex gap-6 text-[10px] font-bold uppercase tracking-widest text-slate-500">
-            <a href="#about">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </div>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Sahani | Data Analyst Portfolio</title>
+    <!-- Tailwind CSS for modern design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: #f8fafc; 
+            color: #1e293b;
+        }
 
-<!-- Hero -->
-<section id="about" class="pt-48 pb-20 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
-    <div class="flex-1">
-        <div class="inline-flex items-center gap-2 bg-indigo-50 text-indigo-600 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase mb-8">
-            MIS Executive & Data Analyst
-        </div>
-        <h1 class="text-5xl md:text-8xl font-black text-slate-900 leading-[0.9] mb-8 tracking-tighter">
-            Hello, I'm <br> Shubham Sahani
-        </h1>
-        <p class="text-lg text-slate-500 mb-10">
-            Specializing in Excel automation, SQL, and business reporting.
-        </p>
-        <div class="flex flex-wrap justify-center md:justify-start gap-4">
-            <a href="https://wa.me/917275175260" target="_blank" class="bg-black text-white px-10 py-4 rounded-2xl font-bold hover:bg-indigo-600 transition">Hire Me</a>
-        </div>
-    </div>
-    <div class="flex-1 flex justify-center">
-        <div class="w-64 h-64 md:w-80 md:h-80 bg-white rounded-[3.5rem] shadow-2xl flex items-center justify-center rotate-3 border-[15px] border-white">
-            <i class="fas fa-chart-line text-8xl text-indigo-100"></i>
-        </div>
-    </div>
-</section>
+        .gradient-bg {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+        }
 
-<!-- Skills -->
-<section id="skills" class="py-24 px-6 max-w-6xl mx-auto text-center">
-    <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-10 rounded-[3rem] border border-slate-50 shadow-sm">
-            <i class="fas fa-file-excel text-green-500 text-3xl mb-6"></i>
-            <h3 class="text-xl font-bold mb-4">Automation</h3>
-            <p class="text-slate-400 text-sm">VBA & Macros for smart workflows.</p>
-        </div>
-        <div class="bg-white p-10 rounded-[3rem] border border-slate-50 shadow-sm">
-            <i class="fas fa-database text-blue-500 text-3xl mb-6"></i>
-            <h3 class="text-xl font-bold mb-4">SQL Data</h3>
-            <p class="text-slate-400 text-sm">Efficient queries for deep insights.</p>
-        </div>
-        <div class="bg-white p-10 rounded-[3rem] border border-slate-50 shadow-sm">
-            <i class="fas fa-chart-pie text-indigo-500 text-3xl mb-6"></i>
-            <h3 class="text-xl font-bold mb-4">MIS Reports</h3>
-            <p class="text-slate-400 text-sm">Clean dashboards for performance tracking.</p>
-        </div>
-    </div>
-</section>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
 
-<!-- Contact -->
-<section id="contact" class="py-20 px-6">
-    <div class="max-w-4xl mx-auto bg-slate-900 rounded-[4rem] p-16 text-center text-white relative overflow-hidden shadow-2xl">
-        <h2 class="text-4xl md:text-5xl font-black mb-8">Let's connect!</h2>
-        <div class="flex justify-center gap-10 mb-16">
-            <a href="https://www.linkedin.com/in/shubham-sahani-b1088925a" target="_blank" class="text-3xl hover:text-indigo-400"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/mrshubham7627" target="_blank" class="text-3xl hover:text-pink-500"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.snapchat.com/add/shubhamsahani.0" target="_blank" class="text-3xl hover:text-yellow-400"><i class="fab fa-snapchat"></i></a>
-            <a href="mailto:mrsahani648@gmail.com" class="text-3xl hover:text-red-400"><i class="fas fa-envelope"></i></a>
-        </div>
-        <a href="https://wa.me/917275175260" target="_blank" class="bg-white text-black px-12 py-4 rounded-2xl font-bold text-xs uppercase hover:bg-indigo-500 hover:text-white transition inline-block">WhatsApp Me</a>
-    </div>
-</section>
+        .shimmer {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: shimmer 2s infinite;
+        }
 
-<footer class="py-12 text-center text-slate-300 text-[10px] font-bold tracking-[0.4em] uppercase">
-    © 2024 Shubham Sahani | Career Portfolio
-</footer>
+        @keyframes shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Navbar -->
+    <header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold italic tracking-tighter text-indigo-600">SS.</div>
+            <nav class="hidden md:flex gap-8 text-sm font-bold uppercase tracking-widest text-slate-500">
+                <a href="#home" class="hover:text-indigo-600 transition">Home</a>
+                <a href="#skills" class="hover:text-indigo-600 transition">Skills</a>
+                <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+            </nav>
+            <a href="https://wa.me/917275175260" target="_blank" class="bg-indigo-600 text-white px-5 py-2 rounded-full text-xs font-bold shadow-md hover:bg-indigo-700 transition">
+                Say Hi!
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main id="home" class="pt-32 pb-20 px-6 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left">
+                <div class="inline-block px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full text-[10px] font-bold uppercase tracking-widest mb-6">
+                    Available for Projects
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black text-slate-900 leading-[1.1] mb-8 tracking-tighter">
+                    I am <span class="text-indigo-600">Shubham.</span> <br> Data Explorer.
+                </h1>
+                <p class="text-lg text-slate-500 mb-10 leading-relaxed max-w-lg">
+                    MIS Executive & Data Analyst. Main data ko simple aur automated banata hoon taaki business decisions lena aasaan ho jaye.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="https://wa.me/917275175260" target="_blank" class="bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold shadow-xl flex items-center gap-2 hover:bg-indigo-600 transition">
+                        Hire Me <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shubham-sahani-b1088925a" target="_blank" class="p-4 border border-slate-200 rounded-2xl hover:border-indigo-600 hover:text-indigo-600 transition">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="flex-1 relative">
+                <!-- Dashboard Mockup Image -->
+                <div class="relative z-10 bg-white p-3 rounded-[2.5rem] shadow-2xl rotate-2 hover:rotate-0 transition-all duration-500 border border-slate-100">
+                    <img src="https://images.unsplash.com/photo-1551288049-bbbda546697a?auto=format&fit=crop&q=80&w=800" class="rounded-[2rem] w-full" alt="Data Dashboard">
+                </div>
+                <!-- Decorative Circle -->
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-indigo-100 rounded-full blur-3xl opacity-50"></div>
+                <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-purple-100 rounded-full blur-3xl opacity-50"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-black text-center mb-16 tracking-tight">What I Do Best.</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                    <div class="w-14 h-14 bg-green-50 text-green-500 rounded-2xl flex items-center justify-center text-2xl mb-8 group-hover:scale-110 transition">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-slate-900">Excel & VBA</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Automation tools aur complex formulas jo ghanto ka kaam minutes mein karde.</p>
+                </div>
+                
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                    <div class="w-14 h-14 bg-blue-50 text-blue-500 rounded-2xl flex items-center justify-center text-2xl mb-8 group-hover:scale-110 transition">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-slate-900">SQL Data</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Database se data nikalna aur use business insights mein badalna.</p>
+                </div>
+
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                    <div class="w-14 h-14 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center text-2xl mb-8 group-hover:scale-110 transition">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-slate-900">MIS Reports</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Sundar aur informative dashboards jo company ki growth track karein.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Section -->
+    <section id="contact" class="py-24 px-6 text-center">
+        <div class="max-w-4xl mx-auto gradient-bg rounded-[3.5rem] p-16 shadow-2xl text-white relative overflow-hidden">
+            <h2 class="text-4xl md:text-5xl font-black mb-8 relative z-10 leading-tight">Chalo, Kuch <br> Great Banate Hain!</h2>
+            <p class="text-white/80 mb-12 max-w-sm mx-auto relative z-10">Mujhse connect karne ke liye niche diye gaye platform par click karein.</p>
+            
+            <div class="flex justify-center gap-8 mb-12 relative z-10">
+                <a href="https://www.instagram.com/mrshubham7627" target="_blank" class="text-3xl hover:scale-125 transition"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.snapchat.com/add/shubhamsahani.0" target="_blank" class="text-3xl hover:scale-125 transition"><i class="fab fa-snapchat"></i></a>
+                <a href="mailto:mrsahani648@gmail.com" class="text-3xl hover:scale-125 transition"><i class="fas fa-envelope"></i></a>
+            </div>
+            
+            <a href="https://wa.me/917275175260" target="_blank" class="bg-white text-indigo-600 px-12 py-4 rounded-2xl font-bold text-xs uppercase tracking-widest hover:shadow-2xl transition-all relative z-10">
+                WhatsApp Connect
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-100 text-center">
+        <div class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.3em]">
+            © 2024 Shubham Sahani | Professional Data Portfolio
+        </div>
+    </footer>
+
+</body>
+</html>
